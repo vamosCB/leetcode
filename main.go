@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Printf("获取的结果为:%+v\n", easy.IsValidBrackets("()[]{}"))
+	fmt.Printf("获取的结果为:%+v\n", easy.IsValidBrackets("()[]{"))
 }

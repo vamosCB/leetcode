@@ -39,6 +39,28 @@ func IsValidBrackets(s string) bool {
 	if len(s)%2 == 1 {
 		return false
 	}
-
+	bracketMap := map[byte]byte{
+		'(': ')',
+		'{': '}',
+		'[': ']',
+	}
+	var stack []byte
+	for index := 0; index < len(s); index++ {
+		if _, ok := bracketMap[s[index]]; ok {
+			stack = append(stack, s[index])
+		} else {
+			if len(stack) == 0 {
+				return false
+			}
+			value := stack[len(stack)-1]
+			stack = stack[0 : len(stack)-1]
+			if bracketMap[value] != s[index] {
+				return false
+			}
+		}
+	}
+	if len(stack) > 0 {
+		return false
+	}
 	return true
 }
