@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Printf("获取的结果为:%+v\n", easy.IsValidBrackets("()[]{"))
+	fmt.Println(easy.RemoveDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
 }
