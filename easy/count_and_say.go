@@ -33,5 +33,5 @@ Explanation: For n = 3 the term was "21" in which we have two groups "2" and "1"
 
 //CountAndSay ...
 func CountAndSay(n int) string {
-	return ""
+	return "这个看不明白什么意思"
 }

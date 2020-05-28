@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(easy.StrStr("mississippi", "issipi"))
+	fmt.Println(easy.SearchInsert([]int{1, 1, 2, 6}, 2))
 }
