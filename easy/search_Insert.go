@@ -24,14 +24,21 @@ Output: 0
 
 //SearchInsert ...
 func SearchInsert(nums []int, target int) int {
-	// if len(nums) == 0 {
-	// 	return 0
-	// }
-	if nums[len(nums)/2] == target {
-		return len(nums) / 2
-	} else if nums[len(nums)/2] > target {
-		return SearchInsert(nums[0:len(nums)/2], target)
-	} else {
-		return SearchInsert(nums[len(nums)/2:len(nums)-1], target)
+	if len(nums) == 0 {
+		return 0
 	}
+	tail := len(nums)
+	head := 0
+
+	for head <= tail {
+		mid := head + (tail-head)/2
+		if target == nums[mid] {
+			return mid
+		} else if target > nums[mid] {
+			head = mid + 1
+		} else {
+			tail = mid - 1
+		}
+	}
+	return head
 }
