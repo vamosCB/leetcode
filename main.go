@@ -2,7 +2,8 @@ package main
 
 import (
 	"leetcode/own"
-	"utils/list"
+
+	"github.com/vamosCB/utils/list"
 )
 
 func main() {

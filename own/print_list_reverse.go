@@ -2,8 +2,9 @@ package own
 
 import (
 	"fmt"
-	"utils/list"
-	"utils/stack"
+
+	"github.com/vamosCB/utils/list"
+	"github.com/vamosCB/utils/stack"
 )
 
 /*
