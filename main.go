@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"leetcode/easy"
-	"utils/list"
+
+	"github.com/vamosCB/utils/list"
 )
 
 func main() {
