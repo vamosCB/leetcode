@@ -2,17 +2,14 @@ package main
 
 import (
 	"fmt"
-	"leetcode/easy"
+	"leetcode/medium"
 
 	"github.com/vamosCB/utils/list"
 )
 
 func main() {
-
-	nums1 := []int{0, 0, 0, 0, 0, 0}
-	nums2 := []int{1}
-	easy.MergeTwoSortArray(nums1, 0, nums2, 1)
-	fmt.Println(nums1)
+	result := medium.LengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18})
+	fmt.Println(result)
 }
 
 func returnTestList() *list.Node {
