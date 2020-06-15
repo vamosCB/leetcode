@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"leetcode/medium"
 
 	"github.com/vamosCB/utils/list"
 )
 
 func main() {
-	result := medium.LengthOfLIS([]int{10, 9, 2, 5, 3, 7, 101, 18})
-	fmt.Println(result)
+	aaa := []int{1, 2, 3}
+	fmt.Println(append([]int{4, 5, 6}, aaa...))
 }
 
 func returnTestList() *list.Node {
