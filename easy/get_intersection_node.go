@@ -1,6 +1,7 @@
 package easy
 
 /*
+<<<<<<< HEAD
 	leetcode 160题
 
 	编写一个程序，找到两个单链表相交的起始节点。
@@ -31,3 +32,7 @@ func GetIntersectionNode(headA, headB *ListNode) *ListNode {
 	}
 	return curA
 }
+=======
+
+ */
+>>>>>>> a696a0e6ff2755a899cda461d31c0a43baf12001
